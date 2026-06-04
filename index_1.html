@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>박예나 · CLK — Data · AI · Real Estate</title>
+<link rel="stylesheet" href="assets/styles.css">
+<script>
+  /* enable JS-driven reveal styles before first paint (avoids flash) */
+  document.documentElement.classList.add("js");
+  /* ultimate failsafe: never leave content hidden if motion.js fails to load */
+  setTimeout(function(){ document.documentElement.classList.add("revealed"); }, 2200);
+</script>
+<style>
+  /* failsafe overrides — if JS reveal never runs, show everything */
+  .revealed [data-reveal]{opacity:1 !important;transform:none !important}
+  .revealed .hero h1 .ln > span{transform:none !important}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <a class="brand" href="#top">CLK<span class="dot"></span><small>박예나</small></a>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="cta">Contact</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-screen-label="Hero">
+  <div class="hero-bg">
+    <div class="hero-grid-lines"></div>
+    <div class="glow"></div>
+  </div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Real Estate · Data · AI</span>
+      <h1>
+        <span class="ln"><span style="--d:120ms">부동산 데이터를</span></span>
+        <span class="ln"><span style="--d:240ms">더 쉽게 이해하는</span></span>
+        <span class="ln"><span style="--d:360ms">방법</span></span>
+      </h1>
+
+      <div class="hero-sub" data-reveal style="--d:560ms">
+        <span class="chip">Data Dashboard</span>
+        <span class="chip">AI Automation</span>
+        <span class="chip">Visual Storytelling</span>
+      </div>
+
+      <p class="desc" data-reveal style="--d:680ms">데이터 분석과 AI 자동화를 활용하여 부동산 시장 정보를 더 직관적으로 전달합니다.</p>
+
+      <div class="hero-cta" data-reveal style="--d:800ms">
+        <a href="#work" class="btn" data-magnetic>프로젝트 보기 <span class="arr">→</span></a>
+        <a href="#contact" class="btn-ghost">CLK 소개</a>
+      </div>
+    </div>
+
+    <!-- visual centerpiece -->
+    <div class="stage" data-reveal="scale" style="--d:300ms">
+      <div class="stage-inner">
+        <!-- portrait anchor -->
+        <div class="float portrait" data-depth="0.6">
+          <div class="frame">
+            <image-slot id="hero-character" radius="22" placeholder="인물 일러스트를 추가하세요" fit="cover"></image-slot>
+            <div class="ring"></div>
+          </div>
+        </div>
+
+        <!-- mini area chart -->
+        <div class="float card-ui c-chart" data-depth="1.6">
+          <div class="lbl">청약 경쟁률</div>
+          <div class="val">142.7<span class="up">▲ 28%</span></div>
+          <svg viewBox="0 0 200 54" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#FF7E5F" stop-opacity=".30"/>
+                <stop offset="1" stop-color="#FF7E5F" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0,46 L26,40 L52,43 L78,30 L104,33 L130,20 L156,22 L182,8 L200,5 L200,54 L0,54 Z" fill="url(#g1)"/>
+            <path d="M0,46 L26,40 L52,43 L78,30 L104,33 L130,20 L156,22 L182,8 L200,5" fill="none" stroke="#FF7E5F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="200" cy="5" r="3.4" fill="#FF7E5F"/>
+          </svg>
+        </div>
+
+        <!-- kpi -->
+        <div class="float card-ui c-kpi" data-depth="2.0">
+          <div class="lbl">분석 정확도</div>
+          <div class="big">98<span class="pct">.4%</span></div>
+          <div class="bars">
+            <i style="height:40%"></i><i style="height:62%"></i><i style="height:48%"></i>
+            <i style="height:80%"></i><i class="hot" style="height:100%"></i>
+          </div>
+        </div>
+
+        <!-- ai workflow -->
+        <div class="float card-ui c-ai" data-depth="1.3">
+          <div class="lbl"><span class="pulse"></span>AI Pipeline</div>
+          <div class="flow">
+            <div class="node"><span class="ic">C</span>Claude</div>
+            <div class="node"><span class="ic">H</span>HyperFrames</div>
+            <div class="node"><span class="ic">E</span>ElevenLabs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-ind">Scroll<div class="track"></div></div>
+</header>
+
+<!-- ============ FEATURED PROJECTS ============ -->
+<section class="section projects" id="work" data-screen-label="Work">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Featured Work</span>
+      <h2>데이터로 증명하는<br>세 가지 프로젝트</h2>
+      <p class="sub">공공데이터, 고객 VOC, 그리고 AI 자동화까지 — 부동산 정보를 더 명확하게 만드는 작업들.</p>
+    </div>
+
+    <div class="proj-grid">
+      <!-- 01 -->
+      <a class="proj proj-01" href="https://cheongyak-dashboard-gamma.vercel.app" target="_blank" rel="noopener" data-reveal>
+        <div class="thumb">
+          <span class="num">01 / Public Data</span>
+          <image-slot id="proj-01" placeholder="대시보드 스크린샷 추가" fit="cover"></image-slot>
+        </div>
+        <div class="body">
+          <h3>청약 데이터 분석 대시보드</h3>
+          <p>공공데이터포털 API를 활용하여 청약 경쟁률 및 지역별 청약 데이터를 시각화한 대시보드.</p>
+          <div class="tech">
+            <span>Public Data API</span><span>Dashboard</span><span>Data Visualization</span>
+          </div>
+          <span class="link">Live 보기 <span class="arr coral">↗</span></span>
+        </div>
+      </a>
+
+      <!-- 02 -->
+      <a class="proj proj-02" href="https://yena-re-analytics.vercel.app" target="_blank" rel="noopener" data-reveal style="--d:120ms">
+        <div class="thumb">
+          <span class="num">02 / Workspace</span>
+          <image-slot id="proj-02" placeholder="대시보드 스크린샷 추가" fit="cover"></image-slot>
+        </div>
+        <div class="body">
+          <h3>GWS 연동 VOC<br>수집 분석 대시보드</h3>
+          <p>Google Workspace 기반 고객 문의 데이터를 수집 및 분석하는 대시보드.</p>
+          <div class="tech">
+            <span>Google Workspace</span><span>Google Sheets</span><span>Analytics</span>
+          </div>
+          <span class="link">Live 보기 <span class="arr coral">↗</span></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECT 03 — CINEMATIC ============ -->
+<section class="cinema" id="featured" data-screen-label="Featured Case Study">
+  <div class="grain"></div>
+  <div class="wrap">
+    <div class="cinema-head" data-reveal>
+      <div>
+        <span class="eyebrow on-dark">Featured Case Study · 03</span>
+        <h2 style="margin-top:18px">AI 정보 영상<br>자동화 프로젝트</h2>
+      </div>
+      <p class="meta">Claude · HyperFrames · ElevenLabs를 활용하여 부동산 및 산업 이슈 영상을 자동 생성하는 엔드투엔드 파이프라인.</p>
+    </div>
+
+    <div class="stagebox spin" data-reveal="scale" style="--d:140ms">
+      <div class="glowborder"></div>
+      <div class="device">
+        <div class="bar">
+          <span class="d"></span><span class="d"></span><span class="d"></span>
+          <span class="url">ai-video-automation · CLK</span>
+        </div>
+        <div class="screen">
+          <image-slot id="proj-03-video" placeholder="영상 / 포스터 이미지 추가" fit="cover"></image-slot>
+          <div class="poster">
+            <button class="playbtn" aria-label="Play"><span class="tri"></span></button>
+            <div class="ptxt">
+              <div class="t">부동산 이슈 자동 브리핑</div>
+              <div class="s">Script → Visuals → Voiceover · 100% automated</div>
+            </div>
+            <div class="wave">
+              <i style="animation-delay:0s"></i><i style="animation-delay:.12s"></i>
+              <i style="animation-delay:.24s"></i><i style="animation-delay:.36s"></i>
+              <i style="animation-delay:.48s"></i><i style="animation-delay:.6s"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cinema-tech" data-reveal style="--d:240ms">
+      <span><b>·</b> Claude</span>
+      <span><b>·</b> HyperFrames</span>
+      <span><b>·</b> ElevenLabs</span>
+      <span><b>·</b> AI Automation</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section skills" id="skills" data-screen-label="Skills">
+  <div class="wrap">
+    <div class="sec-head" data-reveal style="text-align:center;align-items:center;margin-inline:auto">
+      <span class="eyebrow">Capabilities</span>
+      <h2>데이터와 AI 사이를<br>잇는 역량</h2>
+    </div>
+
+    <div class="skill-cloud">
+      <span class="badge drift" data-reveal style="--dur:6.5s;--amp:-14px"><span class="n">01</span>Data Analytics</span>
+      <span class="badge drift" data-reveal style="--d:80ms;--dur:7.4s;--dly:.4s;--amp:-10px"><span class="n">02</span>Dashboard Development</span>
+      <span class="badge drift" data-reveal style="--d:160ms;--dur:6.8s;--dly:.8s;--amp:-16px"><span class="n">03</span>AI Automation</span>
+      <span class="badge drift" data-reveal style="--d:240ms;--dur:7.8s;--dly:.2s;--amp:-11px"><span class="n">04</span>Prompt Engineering</span>
+      <span class="badge drift" data-reveal style="--d:320ms;--dur:6.6s;--dly:.6s;--amp:-15px"><span class="n">05</span>Google Workspace</span>
+      <span class="badge drift" data-reveal style="--d:400ms;--dur:7.2s;--dly:1s;--amp:-12px"><span class="n">06</span>Visual Storytelling</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact" data-screen-label="Contact">
+  <div class="wrap">
+    <div data-reveal>
+      <span class="eyebrow" style="justify-content:center">Get in touch</span>
+      <div class="big" style="margin-top:24px"><span class="clk">CLK</span></div>
+      <p class="tag">Data · AI · Real Estate Storytelling</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap row">
+    <div class="who">
+      <b>박예나</b><span class="sep"></span><span>CLK</span><span class="sep"></span><span>Bachelor's Degree</span>
+    </div>
+    <div class="cc">© 2026 CLK. Crafted with data &amp; AI.</div>
+  </div>
+</footer>
+
+<div id="tweaks-root"></div>
+
+<script src="image-slot.js"></script>
+<script src="assets/motion.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-app.jsx"></script>
+</body>
+</html>
